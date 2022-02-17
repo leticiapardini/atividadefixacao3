@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+        let valorHora = parseFloat(prompt("Digite o valor da sua hora de trabalho:"));
+        let horaTrabalho = parseFloat(prompt("Digite sua carga horario do mês:"));
+        const salariomes = valorHora * horaTrabalho;
+        const descontoinss = salariomes * 0.10;
+
+        if (salariomes < 900){
+            alert("Seu salário bruto é de:" + salariomes + "reais");
+            alert("Seu FGTS depositado pela empresa do mês é de:" + (salariomes * 0.11) + "reais");
+            alert("Você é isento de imposto de renda!!");
+            alert("Seu desconto de INSS(10%) é de:" + descontoinss + "reais")
+            alert("Seu salário liquido é de:" + (salariomes- descontoinss) + "reais");
+        } else if (salariomes < 1500){
+            const descontoir5 = salariomes * 0.05;
+            alert("Seu salário bruto é de:" + salariomes + "reais");
+            alert("Seu FGTS depositado pela empresa do mês é de:" + (salariomes * 0.11) + "reais");
+            alert("Seu desconto de IR(5%) é de:" + descontoir5 + "reais");
+            alert("Seu desconto de INSS (10%) é de:" + descontoinss + "reais");
+            alert("Total de descontos é de:" + (descontoir5 + descontoinss) + "reais");
+            alert ("Seu salário liquido é de:" + (salariomes - descontoir5 - descontoinss) + "reais");
+        } else if (salariomes < 2500){
+            const descontoir10 = salariomes * 0.10;
+            alert("Seu salário bruto é de:" + salariomes + "reais");
+            alert("Seu FGTS depositado pela empresa do mês é de:" + (salariomes * 0.11) + "reais");
+            alert("Seu desconto de IR(10%) é de:" + descontoir10 + "reais");
+            alert("Seu desconto de INSS (10%) é de:" + descontoinss + "reais");
+            alert("Total de descontos é de:" + (descontoir10 + descontoinss) + "reais");
+            alert ("Seu salário liquido é de:" + (salariomes - descontoir10 - descontoinss) + "reais");
+        } else {
+            const descontoir20 = salariomes * 0.20;
+            alert("Seu salário bruto é de:" + salariomes + "reais");
+            alert("Seu FGTS depositado pela empresa do mês é de:" + (salariomes * 0.11) + "reais");
+            alert("Seu desconto de IR(20%) é de:" + descontoir20 + "reais");
+            alert("Seu desconto de INSS (10%) é de:" + descontoinss + "reais");
+            alert("Total de descontos é de:" + (descontoir20 + descontoinss) + "reais");
+            alert ("Seu salário liquido é de:" + (salariomes - descontoir20 - descontoinss) + "reais");
+        }
+
+    
+    </script>
+</body>
+</html>

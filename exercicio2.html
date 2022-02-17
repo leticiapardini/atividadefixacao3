@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <script>
+
+        let salario = parseFloat(prompt("Digite seu salario atual:"));
+        
+       
+       if (salario < 280){
+         alert("Seu salario atual é de:" + salario + "reais");
+         alert("Seu aumento foi de: 20%");
+         alert("O valor que você receberá á mais é de:" + Math.round((salario * 0.20)) + "reais");
+         alert("Seu salário agora será de:" + Math.round((salario * 1.20)) + "reais");
+       } else if (salario < 700) {
+         alert("Seu salario atual é de:" + salario + "reais");
+         alert("Seu aumento foi de: 15%");
+         alert("O valor que você receberá á mais é de:" + Math.round((salario * 0.15)) + "reais");
+         alert("Seu salário agora será de:" + Math.round((salario * 1.15)) + "reais");
+       } else if (salario < 1500){
+         alert("Seu salario atual é de:" + salario + "reais");
+         alert("Seu aumento foi de: 10%");
+         alert("O valor que você receberá á mais é de:" + Math.round((salario * 0.10)) + "reais");
+         alert("Seu salário agora será de:" + Math.round((salario * 1.10)) + "reais");
+       } else {
+         alert("Seu salario atual é de:" + salario + "reais");
+         alert("Seu aumento foi de: 5%");
+         alert("O valor que você receberá á mais é de:" + Math.round((salario * 0.05)) + "reais");
+         alert("Seu salário agora será de:" + Math.round((salario * 1.05)) + "reais");
+
+       }
+        
+       
+       
+
+    </script>
+</body>
+</html>
